@@ -1,7 +1,7 @@
 require 'yaml'
 
 module SunDawg 
-  module CanadaProvinceTranslater
+  module CanadaProvinceTranslator
     # allows client application to override YAML hash
     FILE = File.expand_path(File.join(File.dirname(__FILE__), 'canada_provinces.yml')) unless defined?(FILE)
     CANADA_PROVINCES = YAML.load_file(FILE) unless defined?(CANADA_PROVINCES)

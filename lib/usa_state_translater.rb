@@ -1,7 +1,7 @@
 require 'yaml'
 
 module SunDawg 
-  module USAStateTranslater
+  module USAStateTranslator
     # allows client application to override YAML hash
     FILE = File.expand_path(File.join(File.dirname(__FILE__), 'usa_states.yml')) unless defined?(FILE)
     USA_STATES = YAML.load_file(FILE) unless defined?(USA_STATES)
